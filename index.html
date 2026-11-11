@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-es="Anita Care · Hace falta una tribu para cuidar a quien amamos" data-en="Anita Care · It takes a village to care for someone we love">Anita Care · Hace falta una tribu para cuidar a quien amamos</title>
+<meta name="description" data-es="Anita Care es un concepto en etapa temprana: un compañero digital controlado por el paciente para organizar el cuidado junto a su familia y personas de confianza." data-en="Anita Care is an early-stage concept: a patient-controlled digital companion to organize care together with family and trusted people." content="Anita Care es un concepto en etapa temprana: un compañero digital controlado por el paciente para organizar el cuidado junto a su familia y personas de confianza.">
+<meta name="theme-color" content="#1B4332">
+<meta property="og:title" content="Anita Care">
+<meta property="og:description" content="Empowering patients. Supporting caregivers. Connecting the circle of care.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css">
+<script>
+  // Idioma antes del primer pintado / pick language before first paint: ?lang= > saved choice > browser
+  (function () {
+    var lang = null;
+    try { lang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+    if (lang !== 'es' && lang !== 'en') { try { lang = localStorage.getItem('anita-lang'); } catch (e) {} }
+    if (lang !== 'es' && lang !== 'en') { lang = (navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en'; }
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main"><span class="i18n" lang="es">Saltar al contenido</span><span class="i18n" lang="en">Skip to content</span></a>
+
+<!-- ═════════ NAV ═════════ -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="#top"><span class="logo-text">Anita <em>Care</em></span><span aria-hidden="true"> 🌿</span></a>
+    <nav class="nav-links" data-es-aria="Secciones" data-en-aria="Sections" aria-label="Secciones">
+      <a href="#historia"><span class="i18n" lang="es">Historia</span><span class="i18n" lang="en">Story</span></a>
+      <a href="#problema"><span class="i18n" lang="es">Problema</span><span class="i18n" lang="en">Problem</span></a>
+      <a href="#solucion"><span class="i18n" lang="es">Solución</span><span class="i18n" lang="en">Solution</span></a>
+      <a href="#circulo"><span class="i18n" lang="es">Círculo</span><span class="i18n" lang="en">Circle</span></a>
+      <a href="#progreso"><span class="i18n" lang="es">Progreso</span><span class="i18n" lang="en">Progress</span></a>
+      <a href="#equipo"><span class="i18n" lang="es">Equipo</span><span class="i18n" lang="en">Team</span></a>
+    </nav>
+    <div class="lang-switch" role="group" data-es-aria="Idioma" data-en-aria="Language" aria-label="Idioma">
+      <button type="button" data-set-lang="es" lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-set-lang="en" lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═════════ HERO ═════════ -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <p class="hero-tag"><span class="dot" aria-hidden="true"></span>
+      <span class="i18n" lang="es">Concepto en etapa temprana · Perú · 2026</span>
+      <span class="i18n" lang="en">Early-stage concept · Peru · 2026</span>
+    </p>
+    <p class="hero-logo">Anita <em>Care</em></p>
+    <h1>
+      <span class="i18n" lang="es">Hace falta una tribu para cuidar a quien amamos.</span>
+      <span class="i18n" lang="en">It takes a village to care for someone we love.</span>
+    </h1>
+    <p class="hero-sub">
+      <span class="i18n" lang="es">Empoderar a los pacientes. Apoyar a quienes cuidan. Conectar el círculo de cuidado.</span>
+      <span class="i18n" lang="en">Empowering patients. Supporting caregivers. Connecting the circle of care.</span>
+    </p>
+    <figure class="hero-story">
+      <blockquote>
+        <p class="i18n" lang="es">“De un día para otro, mi mamá tuvo que aprender a ser paciente, y yo tuve que aprender a ser cuidadora, sin un mapa.”</p>
+        <p class="i18n" lang="en">“Overnight, my mother had to learn to be a patient, and I had to learn to be a caregiver, without a roadmap.”</p>
+      </blockquote>
+      <figcaption>— Marcy Castro Lívano · <span class="i18n" lang="es">cofundadora y cuidadora</span><span class="i18n" lang="en">co-founder and caregiver</span></figcaption>
+    </figure>
+    <a class="btn btn-peach" href="#historia"><span class="i18n" lang="es">Conoce nuestra historia</span><span class="i18n" lang="en">Read our story</span> <span aria-hidden="true">↓</span></a>
+  </div>
+</section>
+
+<!-- ═════════ STORY ═════════ -->
+<section class="section story" id="historia" aria-labelledby="historia-h">
+  <div class="container narrow">
+    <p class="eyebrow"><span class="i18n" lang="es">Por qué existimos</span><span class="i18n" lang="en">Why we exist</span></p>
+    <h2 id="historia-h"><span class="i18n" lang="es">Una historia familiar que <em>se convirtió en pregunta</em></span><span class="i18n" lang="en">A family story that <em>became a question</em></span></h2>
+
+    <ol class="story-timeline">
+      <li>
+        <span class="st-dot peach" aria-hidden="true"></span>
+        <p class="st-when"><span class="i18n" lang="es">Febrero 2020 · Lima</span><span class="i18n" lang="en">February 2020 · Lima</span></p>
+        <h3><span class="i18n" lang="es">Un diagnóstico, y el mundo se cierra</span><span class="i18n" lang="en">A diagnosis, as the world shuts down</span></h3>
+        <p class="i18n" lang="es">A mi mamá le diagnosticaron cáncer justo antes de que el Perú entrara en confinamiento por la COVID-19. Ella tuvo que aprender a ser paciente; yo, a ser cuidadora.</p>
+        <p class="i18n" lang="en">My mother was diagnosed with cancer just before Peru entered its COVID-19 lockdown. She had to learn to be a patient; I had to learn to be a caregiver.</p>
+      </li>
+      <li>
+        <span class="st-dot earth" aria-hidden="true"></span>
+        <p class="st-when"><span class="i18n" lang="es">Tiempo después · Sierra Leona</span><span class="i18n" lang="en">Later · Sierra Leone</span></p>
+        <h3><span class="i18n" lang="es">El cuidado a la distancia</span><span class="i18n" lang="en">Caring from far away</span></h3>
+        <p class="i18n" lang="es">Mientras trabajaba lejos, una preocupación de salud en casa, en plena noche, me mostró lo frágil que se vuelve el cuidado cuando depende de una sola persona que puede estar lejos o no estar disponible.</p>
+        <p class="i18n" lang="en">While I was working far away, a nighttime health concern back home showed me how fragile care becomes when it depends on one person who may be far away or unreachable.</p>
+      </li>
+      <li>
+        <span class="st-dot peach" aria-hidden="true"></span>
+        <p class="st-when"><span class="i18n" lang="es">La pregunta</span><span class="i18n" lang="en">The question</span></p>
+        <h3><span class="i18n" lang="es">¿Cómo hacer el cuidado más colectivo sin quitarle el control al paciente?</span><span class="i18n" lang="en">How can we make care more collective without taking control away from the patient?</span></h3>
+      </li>
+      <li>
+        <span class="st-dot green" aria-hidden="true"></span>
+        <p class="st-when"><span class="i18n" lang="es">Hoy</span><span class="i18n" lang="en">Today</span></p>
+        <h3><span class="i18n" lang="es">Nace Anita Care</span><span class="i18n" lang="en">Anita Care is born</span></h3>
+        <p class="i18n" lang="es">Un concepto centrado en el paciente que explora cómo las ciencias del comportamiento, el diseño centrado en las personas y una IA con límites claros pueden ayudar a atravesar una enfermedad seria o crónica junto a las personas de confianza.</p>
+        <p class="i18n" lang="en">A patient-centered concept exploring how behavioral science, human-centered design and carefully bounded AI could help people navigate serious or chronic illness with the people they trust.</p>
+      </li>
+    </ol>
+
+    <div class="mission-card">
+      <p class="eyebrow light"><span class="i18n" lang="es">Nuestra misión</span><span class="i18n" lang="en">Our mission</span></p>
+      <p class="mission-text i18n" lang="es">Ayudar a las personas a dar pasos manejables, movilizar su apoyo y conservar la agencia sobre su cuidado, no solo a entender la información.</p>
+      <p class="mission-text i18n" lang="en">To help people take manageable next steps, mobilize support and retain agency over their care, not only to understand information.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PROBLEM ═════════ -->
+<section class="section problem" id="problema" aria-labelledby="problema-h">
+  <div class="container">
+    <p class="eyebrow"><span class="i18n" lang="es">El problema</span><span class="i18n" lang="en">The problem</span></p>
+    <h2 id="problema-h"><span class="i18n" lang="es">Una enfermedad no afecta solo al paciente. <em>Transforma a toda su red.</em></span><span class="i18n" lang="en">Illness doesn't affect only the patient. <em>It transforms their whole network.</em></span></h2>
+    <p class="section-intro">
+      <span class="i18n" lang="es">La enfermedad cambia la vida diaria mucho más allá de la consulta. Pacientes y familias cargan con información fragmentada, decisiones desconocidas, tareas prácticas y desgaste emocional. Incluso sabiendo qué hay que hacer, el estrés, la sobrecarga, la incertidumbre y la falta de tiempo hacen difícil actuar o pedir ayuda.</span>
+      <span class="i18n" lang="en">Illness reshapes daily life beyond the clinic. Patients and families juggle fragmented information, unfamiliar decisions, practical tasks and emotional strain. Even when they know what needs to happen, stress, cognitive overload, uncertainty and limited time can make it difficult to act or to ask others for help.</span>
+    </p>
+    <div class="cards cards-4">
+      <article class="card">
+        <p class="card-kicker"><span class="i18n" lang="es">Información dispersa</span><span class="i18n" lang="en">Scattered information</span></p>
+        <p class="i18n" lang="es">Resultados, recetas e indicaciones repartidos entre centros de salud, carpetas de papel, chats y memoria.</p>
+        <p class="i18n" lang="en">Results, prescriptions and instructions spread across providers, paper folders, chats and memory.</p>
+      </article>
+      <article class="card">
+        <p class="card-kicker"><span class="i18n" lang="es">Estrés en la consulta</span><span class="i18n" lang="en">Stress in the visit</span></p>
+        <p class="i18n" lang="es">Consultas breves, nervios y preguntas que se olvidan justo cuando más importan.</p>
+        <p class="i18n" lang="en">Short visits, nerves and questions forgotten right when they matter most.</p>
+      </article>
+      <article class="card">
+        <p class="card-kicker"><span class="i18n" lang="es">Indicaciones difíciles</span><span class="i18n" lang="en">Hard-to-follow instructions</span></p>
+        <p class="i18n" lang="es">Términos nuevos y decisiones desconocidas que cuesta entender y convertir en pasos concretos.</p>
+        <p class="i18n" lang="en">New terms and unfamiliar decisions that are hard to understand and turn into concrete steps.</p>
+      </article>
+      <article class="card">
+        <p class="card-kicker"><span class="i18n" lang="es">Coordinación informal</span><span class="i18n" lang="en">Informal coordination</span></p>
+        <p class="i18n" lang="es">¿Quién la acompaña a la cita? ¿Quién compró las medicinas? El peso recae en una o dos personas.</p>
+        <p class="i18n" lang="en">Who goes with her to the appointment? Who picked up the medicine? The weight falls on one or two people.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ BEHAVIORAL SCIENCE ═════════ -->
+<section class="section behavior" aria-labelledby="ciencia-h">
+  <div class="container">
+    <p class="eyebrow light"><span class="i18n" lang="es">Ciencias del comportamiento al centro</span><span class="i18n" lang="en">Behavioral science at the core</span></p>
+    <h2 id="ciencia-h"><span class="i18n" lang="es">El espacio entre <em>entender</em> y <em>actuar</em></span><span class="i18n" lang="en">The space between <em>understanding</em> and <em>follow-through</em></span></h2>
+    <p class="section-intro">
+      <span class="i18n" lang="es">La atención limitada, la fatiga de decisión, la evitación y las fricciones cotidianas moldean el camino del cuidado. Estas son las ideas que queremos poner a prueba:</span>
+      <span class="i18n" lang="en">Attention, decision fatigue, avoidance and everyday frictions shape the care journey. These are the ideas we want to test:</span>
+    </p>
+    <ul class="ideas">
+      <li><span class="idea-num" aria-hidden="true">1</span><p><strong><span class="i18n" lang="es">Un paso claro a la vez</span><span class="i18n" lang="en">One clear next step</span></strong> <span class="i18n" lang="es">en lugar de una lista abrumadora.</span><span class="i18n" lang="en">instead of an overwhelming list.</span></p></li>
+      <li><span class="idea-num" aria-hidden="true">2</span><p><strong><span class="i18n" lang="es">Planes simples</span><span class="i18n" lang="en">Simple plans</span></strong> <span class="i18n" lang="es">sobre quién hará qué.</span><span class="i18n" lang="en">for who will do what.</span></p></li>
+      <li><span class="idea-num" aria-hidden="true">3</span><p><strong><span class="i18n" lang="es">Recordatorios oportunos</span><span class="i18n" lang="en">Timely prompts</span></strong> <span class="i18n" lang="es">que cada persona puede ajustar.</span><span class="i18n" lang="en">that each person can adjust.</span></p></li>
+      <li><span class="idea-num" aria-hidden="true">4</span><p><strong><span class="i18n" lang="es">Preparación</span><span class="i18n" lang="en">Preparation</span></strong> <span class="i18n" lang="es">para conversaciones difíciles.</span><span class="i18n" lang="en">for difficult conversations.</span></p></li>
+      <li><span class="idea-num" aria-hidden="true">5</span><p><strong><span class="i18n" lang="es">Una forma fácil</span><span class="i18n" lang="en">An easy way</span></strong> <span class="i18n" lang="es">de pedir ayuda o hacer una pausa.</span><span class="i18n" lang="en">to ask for help or to pause.</span></p></li>
+    </ul>
+    <p class="note-light">
+      <span class="i18n" lang="es">Son hipótesis de diseño, no intervenciones comprobadas. Deben ser opcionales, transparentes y culturalmente apropiadas, y evaluarse tanto por su beneficio como por sus posibles efectos no deseados.</span>
+      <span class="i18n" lang="en">These are design hypotheses, not proven interventions. They should be opt-in, transparent and culturally appropriate, and evaluated for both benefit and unintended harm.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ═════════ SOLUTION ═════════ -->
+<section class="section solution" id="solucion" aria-labelledby="solucion-h">
+  <div class="container">
+    <p class="eyebrow"><span class="i18n" lang="es">Lo que proponemos</span><span class="i18n" lang="en">What we propose</span></p>
+    <h2 id="solucion-h"><span class="i18n" lang="es">Un compañero digital <em>controlado por el paciente</em></span><span class="i18n" lang="en">A digital companion <em>controlled by the patient</em></span></h2>
+    <p class="section-intro">
+      <span class="i18n" lang="es">Imaginamos un solo lugar para llevar el recorrido de cuidado, compartirlo de forma específica y revocable, y convertirlo en pasos manejables junto a las personas de confianza.</span>
+      <span class="i18n" lang="en">We envision one place to keep the care journey, share it in a specific and revocable way, and turn it into manageable steps together with trusted people.</span>
+    </p>
+
+    <div class="cards cards-4 features">
+      <article class="card feature">
+        <span class="feature-icon" aria-hidden="true">🗂️</span>
+        <h3><span class="i18n" lang="es">Historia de cuidado organizada</span><span class="i18n" lang="en">An organized care history</span></h3>
+        <p class="i18n" lang="es">Citas, decisiones y próximos pasos en un solo lugar, en el orden en que ocurrieron.</p>
+        <p class="i18n" lang="en">Appointments, decisions and next steps in one place, in the order they happened.</p>
+      </article>
+      <article class="card feature">
+        <span class="feature-icon" aria-hidden="true">📝</span>
+        <h3><span class="i18n" lang="es">Preparación de consultas</span><span class="i18n" lang="en">Appointment preparation</span></h3>
+        <p class="i18n" lang="es">Preguntas listas antes de entrar y un espacio para anotar lo acordado al salir.</p>
+        <p class="i18n" lang="en">Questions ready before going in, and a place to note what was agreed on the way out.</p>
+      </article>
+      <article class="card feature">
+        <span class="feature-icon" aria-hidden="true">✅</span>
+        <h3><span class="i18n" lang="es">Tareas compartidas</span><span class="i18n" lang="en">Shared tasks</span></h3>
+        <p class="i18n" lang="es">Tareas no clínicas con responsable y momento, que se pueden pedir o delegar con facilidad.</p>
+        <p class="i18n" lang="en">Nonclinical tasks with an owner and a moment, easy to ask for or delegate.</p>
+      </article>
+      <article class="card feature">
+        <span class="feature-icon" aria-hidden="true">🔒</span>
+        <h3><span class="i18n" lang="es">Permisos diferenciados</span><span class="i18n" lang="en">Differentiated permissions</span></h3>
+        <p class="i18n" lang="es">El paciente decide qué ve cada persona, y puede revocar el acceso cuando quiera.</p>
+        <p class="i18n" lang="en">The patient decides what each person sees, and can revoke access at any time.</p>
+      </article>
+    </div>
+    <p class="section-outro">
+      <span class="i18n" lang="es">Y, cuando haga falta, orientar hacia recursos externos confiables o apoyo humano.</span>
+      <span class="i18n" lang="en">And, when needed, guide people toward trustworthy external resources or human support.</span>
+    </p>
+
+    <div class="boundaries">
+      <h3><span class="i18n" lang="es">Límites claros, por diseño</span><span class="i18n" lang="en">Clear limits, by design</span></h3>
+      <p class="i18n" lang="es">La tecnología puede apoyar la información y la navegación. Las decisiones clínicas siguen siendo del paciente y de su equipo de salud.</p>
+      <p class="i18n" lang="en">Technology can support information and navigation. Clinical decisions remain with the patient and their health professionals.</p>
+      <ul>
+        <li><span class="i18n" lang="es">Sin diagnósticos automáticos</span><span class="i18n" lang="en">No automated diagnosis</span></li>
+        <li><span class="i18n" lang="es">Sin recomendaciones de tratamiento</span><span class="i18n" lang="en">No treatment recommendations</span></li>
+        <li><span class="i18n" lang="es">Sin triaje de emergencias por IA</span><span class="i18n" lang="en">No AI emergency triage</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PROTOTYPE ═════════ -->
+<section class="section prototype" id="prototipo" aria-labelledby="prototipo-h">
+  <div class="container proto-grid">
+    <div class="proto-copy">
+      <p class="eyebrow"><span class="i18n" lang="es">Vista conceptual</span><span class="i18n" lang="en">Concept view</span></p>
+      <h2 id="prototipo-h"><span class="i18n" lang="es">Así imaginamos <em>la experiencia</em></span><span class="i18n" lang="en">How we imagine <em>the experience</em></span></h2>
+      <p class="i18n" lang="es">Una ilustración de cómo podría sentirse Anita Care, pensada para conversar con familias y especialistas. Explora las pestañas.</p>
+      <p class="i18n" lang="en">An illustration of how Anita Care could feel, designed for conversations with families and specialists. Explore the tabs.</p>
+      <p class="proto-warning" role="note">
+        <strong><span class="i18n" lang="es">Prototipo exploratorio.</span><span class="i18n" lang="en">Exploratory prototype.</span></strong>
+        <span class="i18n" lang="es">Personas y datos ficticios. No es un producto disponible ni procesa información real.</span>
+        <span class="i18n" lang="en">Fictional people and data. It is not an available product and does not process real information.</span>
+      </p>
+    </div>
+
+    <div class="phone-wrap">
+      <span class="proto-badge" aria-hidden="true"><span class="i18n" lang="es">PROTOTIPO · DATOS FICTICIOS</span><span class="i18n" lang="en">PROTOTYPE · FICTIONAL DATA</span></span>
+      <div class="phone">
+        <div class="phone-top" aria-hidden="true"><span class="logo-text small">Anita <em>Care</em></span></div>
+        <div class="phone-tabs" role="tablist" data-es-aria="Pantallas del prototipo" data-en-aria="Prototype screens" aria-label="Pantallas del prototipo">
+          <button type="button" role="tab" id="tab-consulta" aria-controls="panel-consulta" aria-selected="true"><span class="i18n" lang="es">Consulta</span><span class="i18n" lang="en">Visit</span></button>
+          <button type="button" role="tab" id="tab-pasos" aria-controls="panel-pasos" aria-selected="false" tabindex="-1"><span class="i18n" lang="es">Pasos</span><span class="i18n" lang="en">Steps</span></button>
+          <button type="button" role="tab" id="tab-circulo" aria-controls="panel-circulo" aria-selected="false" tabindex="-1"><span class="i18n" lang="es">Círculo</span><span class="i18n" lang="en">Circle</span></button>
+        </div>
+
+        <div class="phone-panel" role="tabpanel" id="panel-consulta" aria-labelledby="tab-consulta" tabindex="0">
+          <div class="greeting">
+            <span class="greeting-tag"><span class="dot" aria-hidden="true"></span><span class="i18n" lang="es">Jueves · control</span><span class="i18n" lang="en">Thursday · check-up</span></span>
+            <p class="greeting-title"><span class="i18n" lang="es">Hola, <strong>Rosa</strong><br>Preparemos tu consulta</span><span class="i18n" lang="en">Hi, <strong>Rosa</strong><br>Let's prepare your visit</span></p>
+          </div>
+          <p class="mini-label"><span class="i18n" lang="es">Mis preguntas</span><span class="i18n" lang="en">My questions</span></p>
+          <ul class="mini-list">
+            <li><span class="check" aria-hidden="true">✓</span><span class="i18n" lang="es">¿Cuándo es el próximo control?</span><span class="i18n" lang="en">When is the next check-up?</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span class="i18n" lang="es">¿Qué debo llevar la próxima vez?</span><span class="i18n" lang="en">What should I bring next time?</span></li>
+            <li><span class="check off" aria-hidden="true"></span><span class="i18n" lang="es">¿A quién llamo si tengo dudas?</span><span class="i18n" lang="en">Who do I call if I have questions?</span></li>
+          </ul>
+          <p class="mini-label"><span class="i18n" lang="es">Llevar</span><span class="i18n" lang="en">Bring</span></p>
+          <div class="chips">
+            <span class="chip"><span class="i18n" lang="es">DNI</span><span class="i18n" lang="en">ID card</span></span>
+            <span class="chip"><span class="i18n" lang="es">Carpeta de citas</span><span class="i18n" lang="en">Appointment folder</span></span>
+            <span class="chip"><span class="i18n" lang="es">Acompaña: Luis</span><span class="i18n" lang="en">With: Luis</span></span>
+          </div>
+        </div>
+
+        <div class="phone-panel" role="tabpanel" id="panel-pasos" aria-labelledby="tab-pasos" tabindex="0" hidden>
+          <p class="mini-label"><span class="i18n" lang="es">Después de la consulta · 3 pasos</span><span class="i18n" lang="en">After the visit · 3 steps</span></p>
+          <ul class="steps">
+            <li>
+              <span class="tl-dot green" aria-hidden="true"></span>
+              <div><p class="step-title"><span class="i18n" lang="es">Pedir la siguiente cita</span><span class="i18n" lang="en">Book the next appointment</span></p>
+              <p class="step-meta"><span class="i18n" lang="es">Rosa · lunes en la mañana</span><span class="i18n" lang="en">Rosa · Monday morning</span></p></div>
+              <span class="pill ok"><span class="i18n" lang="es">Hecho</span><span class="i18n" lang="en">Done</span></span>
+            </li>
+            <li>
+              <span class="tl-dot peach" aria-hidden="true"></span>
+              <div><p class="step-title"><span class="i18n" lang="es">Acompañarla a la cita</span><span class="i18n" lang="en">Go with her to the visit</span></p>
+              <p class="step-meta"><span class="i18n" lang="es">Luis · jueves 8:00</span><span class="i18n" lang="en">Luis · Thursday 8:00</span></p></div>
+              <span class="pill wait"><span class="i18n" lang="es">Aceptado</span><span class="i18n" lang="en">Accepted</span></span>
+            </li>
+            <li>
+              <span class="tl-dot grey" aria-hidden="true"></span>
+              <div><p class="step-title"><span class="i18n" lang="es">Llamar al seguro</span><span class="i18n" lang="en">Call the insurer</span></p>
+              <p class="step-meta"><span class="i18n" lang="es">Sin asignar</span><span class="i18n" lang="en">Unassigned</span></p></div>
+              <span class="pill ask"><span class="i18n" lang="es">Pedir ayuda</span><span class="i18n" lang="en">Ask for help</span></span>
+            </li>
+          </ul>
+          <p class="mini-note"><span class="i18n" lang="es">Pocos pasos a la vez, con responsable y momento.</span><span class="i18n" lang="en">A few steps at a time, each with an owner and a moment.</span></p>
+        </div>
+
+        <div class="phone-panel" role="tabpanel" id="panel-circulo" aria-labelledby="tab-circulo" tabindex="0" hidden>
+          <p class="mini-label"><span class="i18n" lang="es">Mi círculo · tú decides</span><span class="i18n" lang="en">My circle · you decide</span></p>
+          <ul class="people">
+            <li>
+              <span class="avatar a1" aria-hidden="true">L</span>
+              <div><p class="step-title">Luis</p><p class="step-meta"><span class="i18n" lang="es">Hijo · citas y tareas</span><span class="i18n" lang="en">Son · visits and tasks</span></p></div>
+              <span class="toggle on" aria-hidden="true"></span>
+            </li>
+            <li>
+              <span class="avatar a2" aria-hidden="true">C</span>
+              <div><p class="step-title">Carmen</p><p class="step-meta"><span class="i18n" lang="es">Vecina · solo transporte</span><span class="i18n" lang="en">Neighbor · transport only</span></p></div>
+              <span class="toggle on" aria-hidden="true"></span>
+            </li>
+            <li>
+              <span class="avatar a3" aria-hidden="true">P</span>
+              <div><p class="step-title">Pedro</p><p class="step-meta"><span class="i18n" lang="es">Sobrino · acceso vencido</span><span class="i18n" lang="en">Nephew · access expired</span></p></div>
+              <span class="toggle" aria-hidden="true"></span>
+            </li>
+          </ul>
+          <p class="mini-note"><span class="i18n" lang="es">🔒 Privado por defecto. Puedes revocar el acceso en cualquier momento.</span><span class="i18n" lang="en">🔒 Private by default. You can revoke access at any time.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CIRCLE OF CARE ═════════ -->
+<section class="section circle" id="circulo" aria-labelledby="circulo-h">
+  <div class="container circle-grid">
+    <div>
+      <p class="eyebrow"><span class="i18n" lang="es">El círculo de cuidado</span><span class="i18n" lang="en">The circle of care</span></p>
+      <h2 id="circulo-h"><span class="i18n" lang="es">Muchas manos. <em>Un solo centro: el paciente.</em></span><span class="i18n" lang="en">Many hands. <em>One center: the patient.</em></span></h2>
+      <p class="section-intro">
+        <span class="i18n" lang="es">Cada persona puede tener un rol y permisos distintos, incluso cuando alguien es paciente en un contexto y cuidadora en otro. Compartir debe ser específico, revocable y decisión del paciente.</span>
+        <span class="i18n" lang="en">Each person can have different roles and permissions, including when someone is a patient in one context and a caregiver in another. Sharing should be specific, revocable and controlled by the patient.</span>
+      </p>
+    </div>
+    <figure class="circle-visual">
+      <svg class="circle-svg" viewBox="0 0 400 400" role="img" aria-labelledby="circle-title circle-desc">
+        <title id="circle-title" data-es="El círculo de cuidado" data-en="The circle of care">El círculo de cuidado</title>
+        <desc id="circle-desc" data-es="El paciente está en el centro. A su alrededor, familia, amistades y personas de confianza, cada una con el nivel de acceso que el paciente decide." data-en="The patient is at the center. Around them are family, friends and trusted people, each with the level of access the patient decides.">El paciente está en el centro. A su alrededor, familia, amistades y personas de confianza, cada una con el nivel de acceso que el paciente decide.</desc>
+        <circle cx="200" cy="200" r="182" class="ring ring-3"/>
+        <circle cx="200" cy="200" r="128" class="ring ring-2"/>
+        <circle cx="200" cy="200" r="74" class="ring ring-1"/>
+        <g class="links">
+          <line x1="200" y1="200" x2="200" y2="72"/><line x1="200" y1="200" x2="311" y2="264"/>
+          <line x1="200" y1="200" x2="89" y2="264"/><line x1="200" y1="200" x2="329" y2="98"/>
+          <line x1="200" y1="200" x2="58" y2="104"/><line x1="200" y1="200" x2="236" y2="374"/>
+        </g>
+        <circle cx="200" cy="200" r="48" class="node-center"/>
+        <text x="200" y="198" class="label-center"><tspan class="i18n" lang="es">Paciente</tspan><tspan class="i18n" lang="en">Patient</tspan></text>
+        <text x="200" y="217" class="label-small-center"><tspan class="i18n" lang="es">decide</tspan><tspan class="i18n" lang="en">decides</tspan></text>
+        <g class="node node-family"><circle cx="200" cy="72" r="26"/><text x="200" y="78">👩</text></g>
+        <g class="node node-family"><circle cx="311" cy="264" r="26"/><text x="311" y="270">👨</text></g>
+        <g class="node node-friend"><circle cx="89" cy="264" r="22"/><text x="89" y="270">🧑</text></g>
+        <g class="node node-trust"><circle cx="329" cy="98" r="18"/><text x="329" y="104">🤝</text></g>
+        <g class="node node-trust"><circle cx="58" cy="104" r="18"/><text x="58" y="110">🚗</text></g>
+        <g class="node node-trust"><circle cx="236" cy="374" r="16"/><text x="236" y="380">📅</text></g>
+        <text x="200" y="140" class="ring-label"><tspan class="i18n" lang="es">familia</tspan><tspan class="i18n" lang="en">family</tspan></text>
+        <text x="200" y="336" class="ring-label"><tspan class="i18n" lang="es">amistades</tspan><tspan class="i18n" lang="en">friends</tspan></text>
+        <text x="200" y="12" class="ring-label"><tspan class="i18n" lang="es">personas de confianza</tspan><tspan class="i18n" lang="en">trusted people</tspan></text>
+      </svg>
+    </figure>
+
+    <div class="roles">
+      <article class="role role-patient">
+        <h3><span class="i18n" lang="es">Paciente</span><span class="i18n" lang="en">Patient</span></h3>
+        <p class="i18n" lang="es">Dueño de su información. Decide quién participa, qué ve cada persona y cuándo termina un acceso.</p>
+        <p class="i18n" lang="en">Owns their information. Decides who takes part, what each person sees and when access ends.</p>
+        <div class="access" aria-hidden="true"><span style="width:100%"></span></div>
+        <p class="access-label"><span class="i18n" lang="es">Control total</span><span class="i18n" lang="en">Full control</span></p>
+      </article>
+      <article class="role">
+        <h3><span class="i18n" lang="es">Familiar que cuida</span><span class="i18n" lang="en">Family caregiver</span></h3>
+        <p class="i18n" lang="es">Ayuda con las citas, tareas y preparación de consultas que el paciente autorizó.</p>
+        <p class="i18n" lang="en">Helps with the appointments, tasks and visit preparation the patient has authorized.</p>
+        <div class="access" aria-hidden="true"><span style="width:66%"></span></div>
+        <p class="access-label"><span class="i18n" lang="es">Amplio y autorizado</span><span class="i18n" lang="en">Broad and authorized</span></p>
+      </article>
+      <article class="role">
+        <h3><span class="i18n" lang="es">Familia y amistades</span><span class="i18n" lang="en">Family and friends</span></h3>
+        <p class="i18n" lang="es">Toman tareas puntuales, como transporte o compras, sin ver diagnósticos.</p>
+        <p class="i18n" lang="en">Take on specific tasks, like transport or errands, without seeing diagnoses.</p>
+        <div class="access" aria-hidden="true"><span style="width:36%"></span></div>
+        <p class="access-label"><span class="i18n" lang="es">Solo sus tareas</span><span class="i18n" lang="en">Only their tasks</span></p>
+      </article>
+      <article class="role">
+        <h3><span class="i18n" lang="es">Persona de confianza</span><span class="i18n" lang="en">Trusted person</span></h3>
+        <p class="i18n" lang="es">Acompaña una cita específica, con un acceso mínimo y temporal.</p>
+        <p class="i18n" lang="en">Joins one specific appointment, with minimal and temporary access.</p>
+        <div class="access" aria-hidden="true"><span style="width:16%"></span></div>
+        <p class="access-label"><span class="i18n" lang="es">Mínimo y temporal</span><span class="i18n" lang="en">Minimal and temporary</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PROGRESS ═════════ -->
+<section class="section progress" id="progreso" aria-labelledby="progreso-h">
+  <div class="container">
+    <p class="eyebrow"><span class="i18n" lang="es">Nuestro progreso</span><span class="i18n" lang="en">Our progress</span></p>
+    <h2 id="progreso-h"><span class="i18n" lang="es">Escuchar <em>antes de construir</em></span><span class="i18n" lang="en">Listening <em>before building</em></span></h2>
+    <p class="section-intro">
+      <span class="i18n" lang="es">Anita Care está en etapa de descubrimiento y diseño. Aún no hemos validado resultados clínicos ni encaje producto-mercado, y lo decimos con claridad.</span>
+      <span class="i18n" lang="en">Anita Care is in the discovery and design stage. We have not yet validated clinical outcomes or established product-market fit, and we say so plainly.</span>
+    </p>
+    <div class="progress-grid">
+      <article class="progress-card">
+        <p class="big-num">6 + 3</p>
+        <h3><span class="i18n" lang="es">Descubrimiento con usuarios</span><span class="i18n" lang="en">Customer discovery</span></h3>
+        <p class="i18n" lang="es">Conversaciones con seis familias y tres especialistas de salud en el Perú.</p>
+        <p class="i18n" lang="en">Conversations with six families and three health specialists in Peru.</p>
+      </article>
+      <article class="progress-card">
+        <p class="big-num" aria-hidden="true">📚</p>
+        <h3><span class="i18n" lang="es">Investigación preliminar</span><span class="i18n" lang="en">Preliminary research</span></h3>
+        <p class="i18n" lang="es">Lecturas sobre ciencias del comportamiento, diseño centrado en las personas y navegación del cuidado, y revisión de alternativas existentes.</p>
+        <p class="i18n" lang="en">Reading on behavioral science, human-centered design and care navigation, and a review of existing alternatives.</p>
+      </article>
+      <article class="progress-card">
+        <p class="big-num" aria-hidden="true">✏️</p>
+        <h3><span class="i18n" lang="es">Prototipos exploratorios</span><span class="i18n" lang="en">Exploratory prototypes</span></h3>
+        <p class="i18n" lang="es">Bocetos y maquetas para conversar con familias y especialistas, no un producto en uso.</p>
+        <p class="i18n" lang="en">Sketches and mock-ups to use in conversations with families and specialists, not a product in use.</p>
+      </article>
+    </div>
+    <div class="next-card">
+      <h3><span class="i18n" lang="es">Lo que viene</span><span class="i18n" lang="en">What comes next</span></h3>
+      <p class="i18n" lang="es">Definir un primer caso de uso enfocado en pacientes y familiares que cuidan, probablemente en torno a la preparación de consultas, las tareas no clínicas compartidas y la orientación hacia recursos, y seguir aprendiendo con prototipos de baja fidelidad.</p>
+      <p class="i18n" lang="en">Shape a focused first use case for patients and family caregivers, likely around appointment preparation, shared nonclinical tasks and resource guidance, and keep learning through low-fidelity prototypes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ TEAM ═════════ -->
+<section class="section team" id="equipo" aria-labelledby="equipo-h">
+  <div class="container">
+    <p class="eyebrow"><span class="i18n" lang="es">Nuestro equipo</span><span class="i18n" lang="en">Our team</span></p>
+    <h2 id="equipo-h"><span class="i18n" lang="es">Las personas <em>detrás de Anita Care</em></span><span class="i18n" lang="en">The people <em>behind Anita Care</em></span></h2>
+
+    <h3 class="team-group"><span class="i18n" lang="es">Cofundadores</span><span class="i18n" lang="en">Co-founders</span></h3>
+    <div class="people-grid">
+      <article class="person">
+        <span class="person-avatar p1" aria-hidden="true">MC</span>
+        <div>
+          <h4>Marcy Castro Lívano</h4>
+          <p class="i18n" lang="es">Cofundadora. Su experiencia como cuidadora de su madre dio origen a Anita Care.</p>
+          <p class="i18n" lang="en">Co-founder. Her experience as her mother's caregiver gave rise to Anita Care.</p>
+        </div>
+      </article>
+      <article class="person">
+        <span class="person-avatar p2" aria-hidden="true">EV</span>
+        <div>
+          <h4>Eduardo Vargas Sánchez</h4>
+          <p><span class="i18n" lang="es">Cofundador.</span><span class="i18n" lang="en">Co-founder.</span></p>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="team-group"><span class="i18n" lang="es">Asesores</span><span class="i18n" lang="en">Advisors</span></h3>
+    <div class="people-grid">
+      <article class="person">
+        <span class="person-avatar p3" aria-hidden="true">YS</span>
+        <div><h4>Yudy Salazar Altamirano</h4><p><span class="i18n" lang="es">Asesoría.</span><span class="i18n" lang="en">Advisor.</span></p></div>
+      </article>
+      <article class="person">
+        <span class="person-avatar p4" aria-hidden="true">KL</span>
+        <div><h4>Kristian López Vargas</h4><p><span class="i18n" lang="es">Asesoría.</span><span class="i18n" lang="en">Advisor.</span></p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CONTACT ═════════ -->
+<section class="section contact" id="contacto" aria-labelledby="contacto-h">
+  <div class="container narrow center">
+    <p class="eyebrow light"><span class="i18n" lang="es">Súmate a la tribu</span><span class="i18n" lang="en">Join the village</span></p>
+    <h2 id="contacto-h"><span class="i18n" lang="es">¿Cuidas, o has cuidado, <em>a alguien que amas?</em></span><span class="i18n" lang="en">Are you caring, or have you cared, <em>for someone you love?</em></span></h2>
+    <p class="i18n" lang="es">Nos encantaría aprender de tu experiencia, o conversar si trabajas en salud, cuidado o impacto social.</p>
+    <p class="i18n" lang="en">We would love to learn from your experience, or to talk if you work in health, caregiving or social impact.</p>
+    <a class="btn btn-peach" href="mailto:mgcastrolivano@uchicago.edu?subject=Anita%20Care"><span class="i18n" lang="es">Escríbenos</span><span class="i18n" lang="en">Write to us</span></a>
+    <p class="fineprint"><span class="i18n" lang="es">Por favor, no envíes información médica personal por correo.</span><span class="i18n" lang="en">Please do not send personal medical information by email.</span></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="logo-text light">Anita <em>Care</em></p>
+      <p class="i18n" lang="es">Empoderar a los pacientes. Apoyar a quienes cuidan. Conectar el círculo de cuidado.</p>
+      <p class="i18n" lang="en">Empowering patients. Supporting caregivers. Connecting the circle of care.</p>
+    </div>
+    <div class="disclaimer">
+      <p class="i18n" lang="es">Anita Care es un proyecto en etapa de descubrimiento y diseño. No es un servicio de salud ni brinda diagnóstico, tratamiento o consejo médico. Ante una emergencia, comunícate con los servicios de emergencia de tu localidad.</p>
+      <p class="i18n" lang="en">Anita Care is a project in the discovery and design stage. It is not a health service and does not provide diagnosis, treatment or medical advice. In an emergency, contact your local emergency services.</p>
+      <p class="i18n" lang="es">Este sitio no usa cookies, formularios ni analítica, y no recolecta datos personales ni de salud.</p>
+      <p class="i18n" lang="en">This site uses no cookies, forms or analytics, and does not collect personal or health data.</p>
+      <p class="copy">© 2026 Anita Care</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
